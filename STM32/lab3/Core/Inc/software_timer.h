@@ -10,7 +10,7 @@
 
 #define NUM_OF_TIMERS 10
 
-extern int TIME_CYCLE;
+#define TIME_CYCLE 10
 
 extern int timer_flag[NUM_OF_TIMERS];
 extern int timer_counter[NUM_OF_TIMERS];

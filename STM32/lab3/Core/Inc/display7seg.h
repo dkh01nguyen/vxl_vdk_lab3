@@ -14,6 +14,7 @@
 extern int index_led;
 extern int counter1, counter2;
 
+
 void display7SEG(int num);
 void update7SEG(int index);
 
