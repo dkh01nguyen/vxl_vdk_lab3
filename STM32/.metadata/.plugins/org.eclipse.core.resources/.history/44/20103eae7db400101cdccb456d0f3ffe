@@ -8,6 +8,7 @@
 #ifndef INC_BUTTON_H_
 #define INC_BUTTON_H_
 
+#include "software_timer.h"
 #include "main.h"
 
 #define NORMAL_STATE    SET
