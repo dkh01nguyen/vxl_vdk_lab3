@@ -32,7 +32,7 @@ void fsm_traffic_light(){
 		counter1 = counter2 = 1;
 		index_led = 0;
 		updateLedBufferMode1();
-		update7SEGPortrait(index_led);
+		update7SEG(index_led);
 
 		//Set timer
 		setTimer(0, GREEN * 1000);	// Set timer for RED_GREEN
@@ -60,7 +60,7 @@ void fsm_traffic_light(){
 		}
 
 		if (timer_flag[2] == 1){
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		// If button 1 is pressed, come to MODE2
@@ -85,7 +85,7 @@ void fsm_traffic_light(){
 		}
 
 		if (timer_flag[2] == 1){
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		// If button 1 is pressed, come to MODE2
@@ -112,7 +112,7 @@ void fsm_traffic_light(){
 		}
 
 		if (timer_flag[2] == 1){
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		// If button 1 is pressed, come to MODE2
@@ -137,7 +137,7 @@ void fsm_traffic_light(){
 		}
 
 		if (timer_flag[2] == 1){
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		// If button 1 is pressed, come to MODE2
@@ -159,7 +159,7 @@ void fsm_traffic_light(){
 
 		index_led = 0;
 		updateLedBufferMode2();
-		update7SEGPortrait(index_led);
+		update7SEG(index_led);
 
 		setTimer(2, 250);			// Set timer for 7SEG LED
 		setTimer(3, 500);			// Set timer for blinking LED
@@ -171,7 +171,7 @@ void fsm_traffic_light(){
 	case AUTO_RED:
 		if (timer_flag[2] == 1){
 			updateLedBufferMode2();
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		if (timer_flag[3] == 1){
@@ -192,7 +192,7 @@ void fsm_traffic_light(){
 	case INC_RED:
 		if (timer_flag[2] == 1){
 			updateLedBufferMode2();
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		if (timer_flag[3] == 1){
@@ -225,7 +225,7 @@ void fsm_traffic_light(){
 
 		index_led = 0;
 		updateLedBufferMode3();
-		update7SEGPortrait(index_led);
+		update7SEG(index_led);
 
 		setTimer(2, 250);			// Set timer for 7SEG LED
 		setTimer(3, 500);			// Set timer for blinking LED
@@ -236,7 +236,7 @@ void fsm_traffic_light(){
 	case AUTO_AMBER:
 		if (timer_flag[2] == 1){
 			updateLedBufferMode3();
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		if (timer_flag[3] == 1){
@@ -257,7 +257,7 @@ void fsm_traffic_light(){
 	case INC_AMBER:
 		if (timer_flag[2] == 1){
 			updateLedBufferMode3();
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		if (timer_flag[3] == 1){
@@ -290,7 +290,7 @@ void fsm_traffic_light(){
 
 		index_led = 0;
 		updateLedBufferMode4();
-		update7SEGPortrait(index_led);
+		update7SEG(index_led);
 
 		setTimer(2, 250);			// Set timer for 7SEG LED
 		setTimer(3, 500);			// Set timer for blinking LED
@@ -301,7 +301,7 @@ void fsm_traffic_light(){
 	case AUTO_GREEN:
 		if (timer_flag[2] == 1){
 			updateLedBufferMode4();
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		if (timer_flag[3] == 1){
@@ -324,7 +324,7 @@ void fsm_traffic_light(){
 	case INC_GREEN:
 		if (timer_flag[2] == 1){
 			updateLedBufferMode4();
-			update7SEGPortrait(index_led);
+			update7SEG(index_led);
 			setTimer(2, 250);
 		}
 		if (timer_flag[3] == 1){
