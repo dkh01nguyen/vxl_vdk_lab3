@@ -15,10 +15,8 @@ extern int counter1, counter2;
 extern int index_ledpt;
 extern int index_ledlc;
 
-void display7seg_landscape(int num);
-void display7seg_portrait(int num);
-void update7SEGPortrait(int index);
-void update7SEGLandscape(int index);
+void display7SEG(int num);
+void update7SEG(int index);
 
 void updateLedBufferMode1();
 void updateLedBufferMode2();

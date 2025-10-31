@@ -8,14 +8,15 @@
 #include "fsm_traffic_light.h"
 
 int status = INIT;
+setTimer(3, 1000);
 
 void fsm_traffic_light(){
+
 	switch(status){
 
 		case INIT:
-			if (timer_flag[3] == 1) {
-				status = MODE1;
-			}
+
+			status = MODE1;
 			break;
 
 		case MODE1:
@@ -39,7 +40,7 @@ void fsm_traffic_light(){
 			setTimer(0, GREEN * 1000);	// Set timer for RED_GREEN
 			setTimer(1, 1000);			// Set timer for updateLedBufferMode1
 			setTimer(2, 250);			// Set timer for 7SEG LED
-			clearTimer(3);
+
 			status = RED_GREEN;
 			break;
 

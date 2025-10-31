@@ -23,7 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "button.h"
-#include "display7seg.h"
+#include "display7SEG.h"
 #include "fsm_traffic_light.h"
 #include "global.h"
 #include "software_timer.h"
@@ -245,6 +245,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
 /* USER CODE END 4 */
 
 /**
@@ -258,12 +259,9 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
-	timerRun();
-	getKeyInput();
+  timerRun();
+  getKeyInput();
   /* USER CODE END Callback 0 */
-  if (htim->Instance == TIM1) {
-    HAL_IncTick();
-  }
   /* USER CODE BEGIN Callback 1 */
 
   /* USER CODE END Callback 1 */
