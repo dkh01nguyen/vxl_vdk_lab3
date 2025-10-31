@@ -18,8 +18,8 @@ void display7seg_landscape(int num){
 
 //A0 -> F0 for portrait LED
 void display7seg_portrait(int num){
-	for (int i=0; i < 9; i++){
-		HAL_GPIO_WritePin(GPIOA, A0_Pin<<i, (table[num]>>i) & 1);
+	for (int i=0; i < 7; i++){
+		HAL_GPIO_WritePin(GPIOB, A0_Pin<<i, (table[num]>>i) & 1);
 	}
 }
 

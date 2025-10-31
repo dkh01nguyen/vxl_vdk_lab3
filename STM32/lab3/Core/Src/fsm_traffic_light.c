@@ -50,6 +50,7 @@ void fsm_traffic_light(){
 
 			if (timer_flag[0] == 1){
 				status = RED_AMBER;
+
 				setTimer(0, AMBER * 1000);
 			}
 
