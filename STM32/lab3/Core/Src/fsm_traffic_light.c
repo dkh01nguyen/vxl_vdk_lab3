@@ -158,8 +158,8 @@ void fsm_traffic_light(){
 		setTimer(3, 500);			// Set timer for blinking LED
 		clearTimer(0);				// Clear timer display LED in MODE1
 		clearTimer(1);				// Clear timer update buffer
+		t = RED;
 		break;
-
 
 	case AUTO_RED:
 		if (timer_flag[2] == 1){
@@ -175,13 +175,20 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE3;
 		}
+
 		if (isButtonPressed(1) == 1){
-			if (RED >= 99) RED = GREEN + 1;
-				else RED++;
+			if (t > 99) {
+				t = 0;
+				RED = 0;
+			} else {
+					t++;
+					RED++;
+				}
 		}
 
 		if (isButtonPressed(2) == 1){
-			status = MODE2;
+			status = MODE3;
+			RED = t;
 		}
 		break;
 
@@ -204,6 +211,7 @@ void fsm_traffic_light(){
 		setTimer(3, 500);			// Set timer for blinking LED
 		clearTimer(0);				// Clear timer display LED in MODE1
 		clearTimer(1);				// Clear timer update buffer
+		t = AMBER;
 		break;
 
 	case AUTO_AMBER:
@@ -221,14 +229,20 @@ void fsm_traffic_light(){
 			status = MODE4;
 		}
 		if (isButtonPressed(1) == 1){
-			status = INC_AMBER;
-			if (AMBER >= 4) AMBER = 1;
-			else AMBER++;
+			if (t > 99) {
+				t = 0;
+				AMBER = 0;
+			} else {
+				t++;
+				AMBER++;
+			}
 		}
 
 		if (isButtonPressed(2) == 1){
-			status = MODE3;
+			status = MODE4;
+			AMBER = t;
 		}
+
 		break;
 	//MODE4
 	case MODE4:
@@ -249,6 +263,7 @@ void fsm_traffic_light(){
 		setTimer(3, 500);			// Set timer for blinking LED
 		clearTimer(0);				// Clear timer display LED in MODE1
 		clearTimer(1);				// Clear timer update buffer
+		t = GREEN;
 		break;
 
 	case AUTO_GREEN:
@@ -264,16 +279,21 @@ void fsm_traffic_light(){
 		}
 		if (isButtonPressed(0) == 1){
 			status = MODE1;
-			if (GREEN <= AMBER) GREEN = AMBER + 1;
-			RED = GREEN + AMBER;
 		}
 		if (isButtonPressed(1) == 1){
-			if (GREEN >= 99) GREEN = RED - AMBER;
-			else GREEN++;
+			if (t > 99) {
+				t = 0;
+				GREEN = 0;
+			} else {
+				t++;
+				GREEN++;
+			}
 		}
 
 		if (isButtonPressed(2) == 1){
-			status = MODE4;
+			GREEN = t;
+			update();
+			status = MODE1;
 		}
 		break;
 	default:

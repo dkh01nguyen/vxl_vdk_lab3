@@ -1,10 +1,3 @@
-/*
- * button.h
- *
- *  Created on: Nov 13, 2023
- *      Author: LENOVO
- */
-
 #ifndef INC_BUTTON_H_
 #define INC_BUTTON_H_
 
@@ -13,7 +6,7 @@
 
 #define NORMAL_STATE 			SET
 #define PRESSED_STATE 			RESET
-#define NUM_OF_BUTTONS 			4
+#define NUM_OF_BUTTONS 			3
 
 int isButtonPressed(int index);
 void getKeyInput();
