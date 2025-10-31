@@ -5,7 +5,7 @@
  *      Author: nguyen
  */
 
-#include "display7seg.h"
+#include "display7SEG.h"
 
 uint8_t table[10] = {
     0b1000000, // 0
