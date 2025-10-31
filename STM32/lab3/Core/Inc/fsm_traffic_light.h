@@ -1,17 +1,10 @@
-/*
- * fsm_traffic_light.h
- *
- *  Created on: Oct 29, 2025
- *      Author: nguyen
- */
-
 #ifndef INC_FSM_TRAFFIC_LIGHT_H_
 #define INC_FSM_TRAFFIC_LIGHT_H_
 
 #include "global.h"
 #include "button.h"
 #include "main.h"
-#include "display7seg.h"
+#include "display7SEG.h"
 #include "software_timer.h"
 
 void fsm_traffic_light();

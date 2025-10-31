@@ -852,3 +852,2536 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2025-10-31 17:06:01.055
 !MESSAGE No repository found at https://download.eclipse.org/releases/2021-03.
+!SESSION 2025-10-31 17:24:12.655 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-10-31 17:24:23.413
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-10-31 17:24:23.478
+!MESSAGE Log4j initialized with config file D:\VXL_VDK_Lab\Lab 3\STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-31 17:24:30.913
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-10-31 20:26:55.631 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-10-31 20:27:29.834
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-10-31 20:27:30.012
+!MESSAGE Log4j initialized with config file D:\VXL_VDK_Lab\Lab 3\STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-31 20:27:40.227
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2025-10-31 21:15:58.705 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\VXL_VDK_Lab\Lab 3\STM32
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-10-31 21:16:02.033
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-10-31 21:16:02.068
+!MESSAGE Log4j initialized with config file D:\VXL_VDK_Lab\Lab 3\STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-31 21:16:06.956
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:24:51.937
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTree(HierarchicalProjectTreeRecoveryHelper.java:120)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getApplicationProjects(MCUIdeHelper.java:85)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.openMainFileEditor(CubeMxEditor.java:2365)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.update(CubeMxEditor.java:2268)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor._doSave(CubeMxEditor.java:664)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.doSave(CubeMxEditor.java:639)
+	at org.eclipse.ui.internal.SaveableHelper.lambda$0(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.SaveableHelper.lambda$3(SaveableHelper.java:271)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:436)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$7(WorkbenchWindow.java:2345)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2343)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:278)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:260)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:160)
+	at org.eclipse.ui.internal.WorkbenchPage.saveSaveable(WorkbenchPage.java:3820)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3833)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:81)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:319)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:253)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1042)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1067)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1094)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1519)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4882)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3130)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:26:04.402
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:26:04.403
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:28:39.298
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:28:39.298
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:28:56.180
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:28:56.181
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:29:29.613
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:29:29.613
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:29:39.627
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:29:39.628
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:29:42.613
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:29:42.614
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:29:48.981
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:29:48.982
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:30:11.832
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:30:11.832
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:31:44.313
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTree(HierarchicalProjectTreeRecoveryHelper.java:120)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getApplicationProjects(MCUIdeHelper.java:85)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.openMainFileEditor(CubeMxEditor.java:2365)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.update(CubeMxEditor.java:2268)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor._doSave(CubeMxEditor.java:664)
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.doSave(CubeMxEditor.java:639)
+	at org.eclipse.ui.internal.SaveableHelper.lambda$0(SaveableHelper.java:156)
+	at org.eclipse.ui.internal.SaveableHelper.lambda$3(SaveableHelper.java:271)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:436)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:352)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$7(WorkbenchWindow.java:2345)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2343)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:278)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:260)
+	at org.eclipse.ui.internal.SaveableHelper.savePart(SaveableHelper.java:160)
+	at org.eclipse.ui.internal.WorkbenchPage.saveSaveable(WorkbenchPage.java:3820)
+	at org.eclipse.ui.internal.WorkbenchPage.saveEditor(WorkbenchPage.java:3833)
+	at org.eclipse.ui.internal.handlers.SaveHandler.execute(SaveHandler.java:81)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at jdk.internal.reflect.GeneratedMethodAccessor140.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:319)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:253)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1042)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1067)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1094)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1519)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4882)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3130)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:31:48.450
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:31:48.451
+!MESSAGE Project is null
+!SESSION 2025-10-31 21:34:28.000 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-10-31 21:34:31.545
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-10-31 21:34:31.593
+!MESSAGE Log4j initialized with config file D:\VXL_VDK_Lab\Lab 3\STM32\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-31 21:34:35.849
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:36:03.265
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:36:03.265
+!MESSAGE Project is null
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.139
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.140
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.141
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.143
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.143
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.145
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.145
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.146
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.146
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.146
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:312)
+	at java.base/sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:316)
+	at java.base/sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:153)
+	at java.base/java.io.OutputStreamWriter.flush(OutputStreamWriter.java:251)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:257)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.147
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.147
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.147
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.147
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.148
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.148
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.148
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.148
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.149
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.149
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.150
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.151
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.151
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.152
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.152
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.153
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.153
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.153
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.154
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.154
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.154
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.154
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.155
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.155
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.155
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.155
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.155
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.155
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.157
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.157
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.159
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.160
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.161
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.161
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.161
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.162
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.162
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.162
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.163
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.163
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.164
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.164
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.164
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.165
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.172
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.173
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.174
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.175
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.176
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.177
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.178
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.178
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.179
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.179
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 2 0 2025-10-31 21:36:05.181
+!MESSAGE Error while determining symbol addresses
+!STACK 0
+java.io.IOException: T
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerOutputStream.write(SpawnerOutputStream.java:51)
+	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:233)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:303)
+	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:281)
+	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:208)
+	at java.base/java.io.BufferedWriter.flushBuffer(BufferedWriter.java:120)
+	at java.base/java.io.BufferedWriter.flush(BufferedWriter.java:256)
+	at org.eclipse.cdt.utils.Addr2line.getOutput(Addr2line.java:64)
+	at org.eclipse.cdt.utils.Addr2line.getLine(Addr2line.java:72)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$6(StackAnalyzerView.java:875)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:885)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:36:56.165
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:36:56.165
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:44:01.305
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:44:01.306
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:50:11.807
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:50:11.807
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 21:55:25.605
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 21:55:25.605
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 275 2025-10-31 22:21:20.453
+!MESSAGE A resource exists with a different case: '/lab3'.
+!STACK 0
+java.lang.Exception: A resource exists with a different case: '/lab3'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:318)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:296)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:56)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:266)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:252)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProject(HierarchicalProjectTreeRecoveryHelper.java:59)
+	at com.st.stm32cube.ide.common.services.core.helpers.HierarchicalProjectTreeRecoveryHelper.getProjectTreeRoot(HierarchicalProjectTreeRecoveryHelper.java:91)
+	at com.st.stm32cube.ide.mcu.ide.process.MCUIdeHelper.getRootProject(MCUIdeHelper.java:78)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.getParameter(IocGeneratorAdapter.java:1073)
+	at com.st.stm32cube.common.mx.iocgenerator.IocGeneratorAdapter.isIocInSyncWithSourceCode(IocGeneratorAdapter.java:936)
+	at com.st.stm32cube.ide.mcu.toolchain.armnone.setup.BuildRunner.invokeBuild(BuildRunner.java:45)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:759)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:515)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:461)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:846)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:229)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:277)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:330)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:333)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:385)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:406)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-10-31 22:21:20.455
+!MESSAGE Project is null

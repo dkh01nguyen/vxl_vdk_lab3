@@ -1,12 +1,11 @@
 /*
  * button.c
  *
- *  Created on: Oct 27, 2025
- *      Author: nguyen
+ *  Created on: Nov 13, 2023
+ *      Author: LENOVO
  */
 
 #include "button.h"
-
 
 int KeyReg0[NUM_OF_BUTTONS] = {NORMAL_STATE};
 int KeyReg1[NUM_OF_BUTTONS] = {NORMAL_STATE};

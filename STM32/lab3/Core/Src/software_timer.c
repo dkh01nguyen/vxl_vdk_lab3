@@ -1,13 +1,6 @@
-/*
- * software_timer.c
- *
- *  Created on: Oct 27, 2025
- *      Author: nguyen
- */
-
 #include "software_timer.h"
 
-int TIME_CYCLE = 10;
+int TIME_CYCLE;
 
 int timer_counter[NUM_OF_TIMERS] = {0};
 int timer_flag[NUM_OF_TIMERS] = {0};

@@ -1,62 +1,47 @@
-/*
- * display7seg.c
- *
- *  Created on: Oct 29, 2025
- *      Author: nguyen
- */
+#include "display7SEG.h"
 
-#include "display7seg.h"
-
-char table[10] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
-
-//SEG for landscape LED
-void display7seg_landscape(int num){
-	for (int i=0; i < 7; i++){
-		HAL_GPIO_WritePin(GPIOB, SEG0_Pin<<i, (table[num]>>i) & 1);
-	}
-}
-
-//A0 -> F0 for portrait LED
-void display7seg_portrait(int num){
-	for (int i=0; i < 9; i++){
-		HAL_GPIO_WritePin(GPIOA, A0_Pin<<i, (table[num]>>i) & 1);
-	}
+void display7SEG(int num){
+  	char led7seg[10] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
+  	for (int i=0; i < 7; i++){
+  		HAL_GPIO_WritePin(GPIOB, SEG0_Pin<<i, (led7seg[num]>>i) & 1);
+  	}
 }
 
 const int MAX_LED = 4;
-int index_ledlc = 0;
-int index_ledpt = 2;
+int index_led = 0;
 int led_buffer[4] = {1, 2, 3, 4};
-
-//led_buffer is used 0 - 1 for landscape, 2 - 3 for portrait LED
-void update7SEGLandscape(int index){
-	display7seg_landscape(led_buffer[index]);
+void update7SEG(int index){
+	display7SEG(led_buffer[index]);
 	switch(index){
 		case 0:
-			index_ledlc = 1;
+			// Display the first 7 SEG with led_buffer [0]
+			index_led = 1;
 			HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, RESET);
 			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, SET);
+			HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, SET);
+			HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, SET);
 			break;
 		case 1:
-			index_ledlc = 0;
+			// Display the second 7 SEG with led_buffer [1]
+			index_led = 2;
 			HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET);
 			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, RESET);
+			HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, SET);
+			HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, SET);
 			break;
-		default:
-			break;
-	}
-}
-
-void update7SEGPortrait(int index){
-	display7seg_portrait(led_buffer[index]);
-	switch(index){
 		case 2:
-			index_ledpt = 3;
+			// Display the third 7 SEG with led_buffer [2]
+			index_led = 3;
+			HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET);
+			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, SET);
 			HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, RESET);
 			HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, SET);
 			break;
 		case 3:
-			index_ledpt = 2;
+			// Display the forth 7 SEG with led_buffer [3]
+			index_led = 0;
+			HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET);
+			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, SET);
 			HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, SET);
 			HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, RESET);
 			break;
@@ -135,6 +120,5 @@ void updateLedBufferMode4(){
 	led_buffer[2] = GREEN / 10;
 	led_buffer[3] = GREEN % 10;
 }
-
 
 

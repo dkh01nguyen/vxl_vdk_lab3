@@ -1,12 +1,6 @@
-/*
- * global.c
- *
- *  Created on: Oct 27, 2025
- *      Author: nguyen
- */
-
 #include "global.h"
 
+int STATUS = INIT;
 
 int RED = 5;
 int AMBER = 2;

@@ -1,10 +1,3 @@
-/*
- * global.h
- *
- *  Created on: Oct 27, 2025
- *      Author: nguyen
- */
-
 #ifndef INC_GLOBAL_H_
 #define INC_GLOBAL_H_
 
@@ -33,5 +26,6 @@ extern int status;
 extern int RED;
 extern int AMBER;
 extern int GREEN;
+
 
 #endif /* INC_GLOBAL_H_ */
