@@ -46,10 +46,6 @@ void getKeyInput() {
 			KeyReg2[i] = HAL_GPIO_ReadPin(BTN3_GPIO_Port, BTN3_Pin);
 		}
 
-		else if (i == 3) {
-			KeyReg2[i] = HAL_GPIO_ReadPin(BTN4_GPIO_Port, BTN4_Pin);
-		}
-
 		if ((KeyReg1[i] == KeyReg0[i]) && (KeyReg1[i] == KeyReg2[i])){
 			if (KeyReg3[i] != KeyReg2[i]){
 				KeyReg3[i] = KeyReg2[i];

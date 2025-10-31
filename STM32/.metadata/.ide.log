@@ -8516,3 +8516,38 @@
 2025-10-31 22:51:02,405 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2697mS.
 2025-10-31 22:51:02,406 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2025-10-31 22:51:02,407 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2025-10-31 23:09:31,834 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 379872336 Bytes (679477248)
+2025-10-31 23:09:31,884 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 391406672 Bytes (679477248)
+2025-10-31 23:09:32,318 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 438592592 Bytes (679477248)
+2025-10-31 23:09:32,493 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2025-10-31 23:09:32,494 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2025-10-31 23:09:32,494 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2025-10-31 23:09:32,494 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2025-10-31 23:09:32,494 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2025-10-31 23:09:32,495 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2025-10-31 23:09:32,634 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\MXTmpFiles\license.tmp_save
+2025-10-31 23:09:32,671 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\MXTmpFiles\license.tmp
+2025-10-31 23:09:32,698 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\MXTmpFiles\gpio.tmp_save
+2025-10-31 23:09:32,743 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\MXTmpFiles\gpio.tmp
+2025-10-31 23:09:32,836 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Src\stm32f1xx_it.c_save
+2025-10-31 23:09:32,929 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Src\stm32f1xx_it.c
+2025-10-31 23:09:32,932 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Inc\stm32f1xx_it.h_save
+2025-10-31 23:09:32,967 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Inc\stm32f1xx_it.h
+2025-10-31 23:09:32,981 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Src\stm32f1xx_hal_msp.c_save
+2025-10-31 23:09:33,040 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Src\stm32f1xx_hal_msp.c
+2025-10-31 23:09:33,044 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\MXTmpFiles\system.tmp_save
+2025-10-31 23:09:33,074 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\MXTmpFiles\system.tmp
+2025-10-31 23:09:33,086 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-10-31 23:09:33,177 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Inc\stm32f1xx_hal_conf.h
+2025-10-31 23:09:33,196 [WARN] IPConfigManager:3148 - IP not found : TIM
+2025-10-31 23:09:33,197 [WARN] CodeGenerator:3268 - IP not found : null
+2025-10-31 23:09:33,215 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Inc\main.h_save
+2025-10-31 23:09:33,267 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Inc\main.h
+2025-10-31 23:09:33,278 [INFO] CodeEngine:239 - oldGeneratedFile, D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Src\main.c_save
+2025-10-31 23:09:33,356 [INFO] CodeEngine:257 - Generated code: D:\VXL_VDK_Lab\Lab 3\STM32\lab3\Core\Src\main.c
+2025-10-31 23:09:33,800 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 68mS.
+2025-10-31 23:09:33,802 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2025-10-31 23:09:34,021 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2025-10-31 23:09:35,032 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1230mS.
+2025-10-31 23:09:35,032 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2025-10-31 23:09:35,033 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
