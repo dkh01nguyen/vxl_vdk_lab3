@@ -11,9 +11,9 @@
 #include "main.h"
 #include "global.h"
 
-extern int index_led;
 extern int counter1, counter2;
-
+extern int index_ledpt;
+extern int index_ledlc;
 
 void display7SEG(int num);
 void update7SEG(int index);

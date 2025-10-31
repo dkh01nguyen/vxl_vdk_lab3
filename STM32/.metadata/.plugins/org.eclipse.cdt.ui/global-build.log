@@ -404,3 +404,512 @@ arm-none-eabi-size   lab3.elf
   11204	    100	   1852	  13156	   3364	lab3.elf
 Finished building: default.size.stdout
  
+10:15:40 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlc' undeclared (first use in this function); did you mean 'index_led'?
+   32 |    index_ledlc = 0;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledpt' undeclared (first use in this function); did you mean 'index_led'?
+   33 |    index_ledpt = 2;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:16:17 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlc' undeclared (first use in this function); did you mean 'index_led'?
+   32 |    index_ledlc = 0;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledpt' undeclared (first use in this function); did you mean 'index_led'?
+   33 |    index_ledpt = 2;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:16:54 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlc' undeclared (first use in this function); did you mean 'index_led'?
+   32 |    index_ledlc = 0;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledpt' undeclared (first use in this function); did you mean 'index_led'?
+   33 |    index_ledpt = 2;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:17:01 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlc' undeclared (first use in this function); did you mean 'index_led'?
+   32 |    index_ledlc = 0;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledpt' undeclared (first use in this function); did you mean 'index_led'?
+   33 |    index_ledpt = 2;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:20:07 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlc' undeclared (first use in this function); did you mean 'index_led'?
+   32 |    index_ledlc = 0;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledpt' undeclared (first use in this function); did you mean 'index_led'?
+   33 |    index_ledpt = 2;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:20:36 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlc' undeclared (first use in this function); did you mean 'index_led'?
+   32 |    index_ledlc = 0;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledpt' undeclared (first use in this function); did you mean 'index_led'?
+   33 |    index_ledpt = 2;
+      |    ^~~~~~~~~~~
+      |    index_led
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:22:35 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:64:23: error: 'index_led' undeclared (first use in this function); did you mean 'index_ledlc'?
+   64 |    update7SEGPortrait(index_led);
+      |                       ^~~~~~~~~
+      |                       index_ledlc
+../Core/Src/fsm_traffic_light.c:64:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:23:20 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:32:4: error: 'index_ledlclc' undeclared (first use in this function); did you mean 'index_ledlc'?
+   32 |    index_ledlclc = 0;
+      |    ^~~~~~~~~~~~~
+      |    index_ledlc
+../Core/Src/fsm_traffic_light.c:32:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:33:4: error: 'index_ledlcpt' undeclared (first use in this function); did you mean 'index_ledlc'?
+   33 |    index_ledlcpt = 2;
+      |    ^~~~~~~~~~~~~
+      |    index_ledlc
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlclc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledlcpt);
+      |    ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:23:31 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlclc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:35:24: error: 'index_ledlclc' undeclared (first use in this function); did you mean 'index_ledlc'?
+   35 |    update7SEGLandscape(index_ledlclc);
+      |                        ^~~~~~~~~~~~~
+      |                        index_ledlc
+../Core/Src/fsm_traffic_light.c:35:24: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledlcpt);
+      |    ^~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:23: error: 'index_ledlcpt' undeclared (first use in this function); did you mean 'index_ledlc'?
+   36 |    update7SEGPortrait(index_ledlcpt);
+      |                       ^~~~~~~~~~~~~
+      |                       index_ledlc
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:23:39 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/display7seg.o: in function `update7SEGLandscape':
+D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/display7seg.c:56: undefined reference to `index_ledlc'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/display7seg.o: in function `update7SEGPortrait':
+D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/display7seg.c:73: undefined reference to `index_ledpt'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/fsm_traffic_light.o: in function `fsm_traffic_light':
+D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:123: undefined reference to `index_ledlc'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:123: undefined reference to `index_ledpt'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:235: undefined reference to `index_ledlc'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:123: undefined reference to `index_ledlc'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: lab3.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:24:49 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  11392	    104	   1856	  13352	   3428	lab3.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab3.list
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+10:25:01 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/display7seg.o: in function `update7SEGLandscape':
+D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/display7seg.c:56: undefined reference to `index_ledlc'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/display7seg.o: in function `update7SEGPortrait':
+D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/display7seg.c:74: undefined reference to `index_ledpt'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/fsm_traffic_light.o: in function `fsm_traffic_light':
+D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:123: undefined reference to `index_ledlc'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:123: undefined reference to `index_ledpt'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:235: undefined reference to `index_ledlc'
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Src/fsm_traffic_light.c:123: undefined reference to `index_ledlc'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: lab3.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:25:07 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+  11392	    104	   1856	  13352	   3428	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+10:29:28 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:153:1: error: expected declaration or statement at end of input
+  153 | }
+      | ^
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:29:40 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:153:1: error: expected declaration or statement at end of input
+  153 | }
+      | ^
+make: *** [Core/Src/subdir.mk:52: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:30:05 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9708	    104	   1856	  11668	   2d94	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+10:41:45 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9708	    120	   1840	  11668	   2d94	lab3.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+10:41:48 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-size   lab3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9708	    120	   1840	  11668	   2d94	lab3.elf
+Finished building: default.size.stdout
+ 
+10:44:48 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   35 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:36:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   36 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/global.o:D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Inc/global.h:31: multiple definition of `status'; ./Core/Src/fsm_traffic_light.o:D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Inc/global.h:31: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: lab3.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:45:50 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/global.o:D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Inc/global.h:31: multiple definition of `status'; ./Core/Src/fsm_traffic_light.o:D:/VXL_VDK_Lab/Lab 3/STM32/lab3/Debug/../Core/Inc/global.h:31: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: lab3.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+10:46:39 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9652	    120	   1840	  11612	   2d5c	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+10:51:59 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7seg.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7seg.d" -MT"Core/Src/display7seg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7seg.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9712	    120	   1840	  11672	   2d98	lab3.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+10:58:12 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:34:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   34 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   35 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9712	    120	   1840	  11672	   2d98	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+11:00:31 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:34:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   34 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   35 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9712	    120	   1840	  11672	   2d98	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+11:01:09 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:34:4: warning: implicit declaration of function 'update7SEGLandscape' [-Wimplicit-function-declaration]
+   34 |    update7SEGLandscape(index_ledlc);
+      |    ^~~~~~~~~~~~~~~~~~~
+../Core/Src/fsm_traffic_light.c:35:4: warning: implicit declaration of function 'update7SEGPortrait' [-Wimplicit-function-declaration]
+   35 |    update7SEGPortrait(index_ledpt);
+      |    ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9712	    120	   1840	  11672	   2d98	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 

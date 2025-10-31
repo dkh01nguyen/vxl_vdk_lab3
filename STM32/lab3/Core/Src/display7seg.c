@@ -22,32 +22,35 @@ uint8_t table[10] = {
 
 
 //SEG for landscape LED
-
 void display7seg_landscape(int num){
-	uint8_t n= table[num];
-	GPIOB->ODR = (GPIOB->ODR & ~0x7F) | (n & 0x7F);
+	for (int i=0; i < 7; i++){
+		HAL_GPIO_WritePin(GPIOB, SEG0_Pin<<i, (table[num]>>i) & 1);
+	}
 }
 
 //A0 -> F0 for portrait LED
 void display7seg_portrait(int num){
-	uint8_t n= table[num];
-	GPIOB->ODR = (GPIOB->ODR & ~(0x7F << 7)) | ((n & 0x7F) << 7);
+	for (int i=0; i < 7; i++){
+		HAL_GPIO_WritePin(GPIOB, A0_Pin<<i, (table[num]>>i) & 1);
+	}
 }
 
 const int MAX_LED = 4;
-int index_led = 0;
-int led_buffer[4] = {0};
+int index_ledlc = 0;
+int index_ledpt = 2;
+int led_buffer[4] = {1, 2, 3, 4};
+
 //led_buffer is used 0 - 1 for landscape, 2 - 3 for portrait LED
 void update7SEGLandscape(int index){
 	display7seg_landscape(led_buffer[index]);
 	switch(index){
 		case 0:
-			index_led = 1;
+			index_ledlc = 1;
 			HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, RESET);
 			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, SET);
 			break;
 		case 1:
-			index_led = 0;
+			index_ledlc = 0;
 			HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, SET);
 			HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, RESET);
 			break;
@@ -55,16 +58,17 @@ void update7SEGLandscape(int index){
 			break;
 	}
 }
+
 void update7SEGPortrait(int index){
 	display7seg_portrait(led_buffer[index]);
 	switch(index){
 		case 2:
-			index_led = 3;
+			index_ledpt = 3;
 			HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, RESET);
 			HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, SET);
 			break;
 		case 3:
-			index_led = 2;
+			index_ledpt = 2;
 			HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, SET);
 			HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, RESET);
 			break;
