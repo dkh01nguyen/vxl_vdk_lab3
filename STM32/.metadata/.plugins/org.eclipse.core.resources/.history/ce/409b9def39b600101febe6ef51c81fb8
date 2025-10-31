@@ -61,6 +61,7 @@ void fsm_traffic_light(){
 			if (timer_flag[2] == 1){
 				update7SEGLandscape(index_ledlc);
 				update7SEGPortrait(index_ledpt);
+				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, RESET);
 				setTimer(2, 250);
 			}
 

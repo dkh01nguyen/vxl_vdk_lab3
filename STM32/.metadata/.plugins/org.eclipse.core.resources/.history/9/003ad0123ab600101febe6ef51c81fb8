@@ -18,6 +18,7 @@ void fsm_traffic_light(){
 
 		case MODE1:
 			//Set up LED
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, SET);
 			HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, RESET);
 			HAL_GPIO_WritePin(A1_GPIO_Port, A1_Pin, SET);
 			HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, SET);
@@ -61,6 +62,7 @@ void fsm_traffic_light(){
 			if (timer_flag[2] == 1){
 				update7SEGLandscape(index_ledlc);
 				update7SEGPortrait(index_ledpt);
+				HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, RESET);
 				setTimer(2, 250);
 			}
 
