@@ -22,11 +22,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "global.h"
+#include "software_timer.h"
 #include "button.h"
 #include "display7seg.h"
 #include "fsm_traffic_light.h"
-#include "global.h"
-#include "software_timer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,10 +100,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  fsm_traffic_light();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  fsm_traffic_light();
   }
   /* USER CODE END 3 */
 }
@@ -202,9 +202,9 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, EN0_Pin|EN1_Pin|EN2_Pin|EN3_Pin
-                          |R1_Pin|A1_Pin|G1_Pin|R2_Pin
-                          |A2_Pin|G2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED_Pin|BTN1_Pin|EN0_Pin|EN1_Pin
+                          |EN2_Pin|EN3_Pin|R1_Pin|A1_Pin
+                          |G1_Pin|R2_Pin|A2_Pin|G2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SEG0_Pin|SEG1_Pin|SEG2_Pin|D0_Pin
@@ -212,21 +212,21 @@ static void MX_GPIO_Init(void)
                           |SEG4_Pin|SEG5_Pin|SEG6_Pin|A0_Pin
                           |B0_Pin|C0_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : BTN1_Pin BTN2_Pin BTN3_Pin */
-  GPIO_InitStruct.Pin = BTN1_Pin|BTN2_Pin|BTN3_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : EN0_Pin EN1_Pin EN2_Pin EN3_Pin
-                           R1_Pin A1_Pin G1_Pin R2_Pin
-                           A2_Pin G2_Pin */
-  GPIO_InitStruct.Pin = EN0_Pin|EN1_Pin|EN2_Pin|EN3_Pin
-                          |R1_Pin|A1_Pin|G1_Pin|R2_Pin
-                          |A2_Pin|G2_Pin;
+  /*Configure GPIO pins : LED_Pin BTN1_Pin EN0_Pin EN1_Pin
+                           EN2_Pin EN3_Pin R1_Pin A1_Pin
+                           G1_Pin R2_Pin A2_Pin G2_Pin */
+  GPIO_InitStruct.Pin = LED_Pin|BTN1_Pin|EN0_Pin|EN1_Pin
+                          |EN2_Pin|EN3_Pin|R1_Pin|A1_Pin
+                          |G1_Pin|R2_Pin|A2_Pin|G2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : BTN2_Pin BTN3_Pin */
+  GPIO_InitStruct.Pin = BTN2_Pin|BTN3_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : SEG0_Pin SEG1_Pin SEG2_Pin D0_Pin
@@ -245,29 +245,11 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-/* USER CODE END 4 */
-
-/**
-  * @brief  Period elapsed callback in non blocking mode
-  * @note   This function is called  when TIM1 interrupt took place, inside
-  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
-  * a global variable "uwTick" used as application time base.
-  * @param  htim : TIM handle
-  * @retval None
-  */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-  /* USER CODE BEGIN Callback 0 */
-	timerRun();
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	getKeyInput();
-  /* USER CODE END Callback 0 */
-  if (htim->Instance == TIM1) {
-    HAL_IncTick();
-  }
-  /* USER CODE BEGIN Callback 1 */
-
-  /* USER CODE END Callback 1 */
+	timerRun();
 }
+/* USER CODE END 4 */
 
 /**
   * @brief  This function is executed in case of error occurrence.

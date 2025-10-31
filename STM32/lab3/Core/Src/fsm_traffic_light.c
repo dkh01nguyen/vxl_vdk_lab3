@@ -21,7 +21,7 @@ void fsm_traffic_light(){
 			HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, RESET);
 			HAL_GPIO_WritePin(A1_GPIO_Port, A1_Pin, SET);
 			HAL_GPIO_WritePin(G1_GPIO_Port, G1_Pin, SET);
-			HAL_GPIO_WritePin(R1_GPIO_Port, R2_Pin, SET);
+			HAL_GPIO_WritePin(R2_GPIO_Port, R2_Pin, SET);
 			HAL_GPIO_WritePin(A2_GPIO_Port, A2_Pin, SET);
 			HAL_GPIO_WritePin(G2_GPIO_Port, G2_Pin, RESET);
 
@@ -43,6 +43,7 @@ void fsm_traffic_light(){
 
 		case RED_GREEN:
 			//Set up LED
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, RESET);
 			HAL_GPIO_WritePin(R1_GPIO_Port, R1_Pin, RESET);
 			HAL_GPIO_WritePin(A1_GPIO_Port, A1_Pin, SET);
 			HAL_GPIO_WritePin(R2_GPIO_Port, R2_Pin, SET);
@@ -50,6 +51,7 @@ void fsm_traffic_light(){
 
 			if (timer_flag[0] == 1){
 				status = RED_AMBER;
+				HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 				setTimer(0, AMBER * 1000);
 			}
 
