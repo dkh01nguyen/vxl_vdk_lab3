@@ -13,7 +13,7 @@
 
 #define NORMAL_STATE 			SET
 #define PRESSED_STATE 			RESET
-#define NUM_OF_BUTTONS 			4
+#define NUM_OF_BUTTONS 			3
 
 int isButtonPressed(int index);
 void getKeyInput();

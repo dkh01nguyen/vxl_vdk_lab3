@@ -99,12 +99,17 @@ void updateLedBufferMode2(){
 	led_buffer[0] = 0;
 	led_buffer[1] = 2;
 	// Display value RED
+	led_buffer[2] = RED / 10;
+	led_buffer[3] = RED % 10;
 }
 
 void updateLedBufferMode3(){
 	// Display mode 3
 	led_buffer[0] = 0;
 	led_buffer[1] = 3;
+	// Display value AMBER
+	led_buffer[2] = AMBER / 10;
+	led_buffer[3] = AMBER % 10;
 }
 
 void updateLedBufferMode4(){
@@ -112,6 +117,8 @@ void updateLedBufferMode4(){
 	led_buffer[0] = 0;
 	led_buffer[1] = 4;
 	// Display value GREEN
+	led_buffer[2] = GREEN / 10;
+	led_buffer[3] = GREEN % 10;
 }
 
 

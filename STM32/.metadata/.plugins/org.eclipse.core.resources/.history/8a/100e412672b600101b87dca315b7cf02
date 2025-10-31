@@ -60,10 +60,6 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
 		}
-
-		if (isButtonPressed(1) == 1) {
-			status = MODE4;
-		}
 		break;
 
 	case RED_AMBER:
@@ -88,9 +84,6 @@ void fsm_traffic_light(){
 		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
-		}
-		if (isButtonPressed(1) == 1) {
-			status = MODE4;
 		}
 		break;
 
@@ -119,10 +112,6 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
 		}
-
-		if (isButtonPressed(1) == 1) {
-			status = MODE4;
-		}
 		break;
 
 	case AMBER_RED:
@@ -147,10 +136,6 @@ void fsm_traffic_light(){
 		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
-		}
-
-		if (isButtonPressed(1) == 1) {
-			status = MODE4;
 		}
 		break;
 
@@ -191,7 +176,8 @@ void fsm_traffic_light(){
 			status = MODE3;
 		}
 		if (isButtonPressed(1) == 1){
-			status = MODE4;
+			if (RED >= 99) RED = GREEN + 1;
+				else RED++;
 		}
 
 		if (isButtonPressed(2) == 1){
@@ -237,7 +223,8 @@ void fsm_traffic_light(){
 			RED = GREEN + AMBER;
 		}
 		if (isButtonPressed(1) == 1){
-			status = MODE4;
+			if (GREEN >= 99) GREEN = RED - AMBER;
+			else GREEN++;
 		}
 
 		if (isButtonPressed(2) == 1){
@@ -277,7 +264,16 @@ void fsm_traffic_light(){
 			setTimer(3, 200);
 		}
 		if (isButtonPressed(0) == 1){
-			status = MODE1;
+			status = MODE4;
+		}
+		if (isButtonPressed(1) == 1){
+			status = INC_AMBER;
+			if (AMBER >= 4) AMBER = 1;
+			else AMBER++;
+		}
+
+		if (isButtonPressed(2) == 1){
+			status = AUTO_AMBER;
 		}
 		break;
 	default:
