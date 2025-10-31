@@ -7992,3 +7992,21 @@
 
 
 2025-10-31 21:34:31,596 [INFO] Activator:178 - !SESSION log4j initialized
+2025-10-31 22:43:06,366 [INFO] Activator:177 - 
+
+
+2025-10-31 22:43:06,371 [INFO] Activator:178 - !SESSION log4j initialized
+2025-10-31 22:43:35,550 [ERROR] ApiDbMcu:1508 - Can't use Application install path:
+2025-10-31 22:43:38,265 [WARN] RulesReader:59 - Compatibility file://mcu/compatibility.xml not found
+2025-10-31 22:44:07,454 [INFO] Activator:177 - 
+
+
+2025-10-31 22:44:07,455 [INFO] Activator:178 - !SESSION log4j initialized
+2025-10-31 22:44:25,593 [ERROR] ApiDbMcu:1508 - Can't use Application install path:
+2025-10-31 22:44:28,305 [WARN] RulesReader:59 - Compatibility file://mcu/compatibility.xml not found
+2025-10-31 22:44:46,909 [INFO] Activator:177 - 
+
+
+2025-10-31 22:44:46,909 [INFO] Activator:178 - !SESSION log4j initialized
+2025-10-31 22:44:53,611 [ERROR] ApiDbMcu:1508 - Can't use Application install path:
+2025-10-31 22:44:53,612 [WARN] RulesReader:59 - Compatibility file://mcu/compatibility.xml not found
