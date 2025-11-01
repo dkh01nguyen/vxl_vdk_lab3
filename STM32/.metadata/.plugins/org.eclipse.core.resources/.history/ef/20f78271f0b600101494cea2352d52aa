@@ -30,7 +30,7 @@ void fsm_traffic_light(){
 		//Set timer
 		setTimer(0, GREEN * 1000);	// Set timer for RED_GREEN
 		setTimer(1, 1000);			// Set timer for updateLedBufferMode1
-		setTimer(2, 250);			// Set timer for 7SEG LED
+		setTimer(2, 200);			// Set timer for 7SEG LED
 		clearTimer(3);				// Clear timer for blinking LED
 
 		break;
@@ -54,7 +54,7 @@ void fsm_traffic_light(){
 
 		if (timer_flag[2] == 1){
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
@@ -83,7 +83,7 @@ void fsm_traffic_light(){
 
 		if (timer_flag[2] == 1){
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
@@ -114,7 +114,7 @@ void fsm_traffic_light(){
 
 		if (timer_flag[2] == 1){
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 
 		if (isButtonPressed(0) == 1){
@@ -143,7 +143,7 @@ void fsm_traffic_light(){
 
 		if (timer_flag[2] == 1){
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
@@ -170,7 +170,7 @@ void fsm_traffic_light(){
 		updateLedBufferMode2();
 		update7SEG(index_led);
 
-		setTimer(2, 250);			// Set timer for 7SEG LED
+		setTimer(2, 200);			// Set timer for 7SEG LED
 		setTimer(3, 500);			// Set timer for blinking LED
 		clearTimer(0);				// Clear timer display LED in MODE1
 		clearTimer(1);				// Clear timer update buffer
@@ -181,7 +181,7 @@ void fsm_traffic_light(){
 		if (timer_flag[2] == 1){
 			updateLedBufferMode2();
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 		if (timer_flag[3] == 1){
 			HAL_GPIO_TogglePin(R1_GPIO_Port, R1_Pin);
@@ -224,7 +224,7 @@ void fsm_traffic_light(){
 		updateLedBufferMode3();
 		update7SEG(index_led);
 
-		setTimer(2, 250);			// Set timer for 7SEG LED
+		setTimer(2, 200);			// Set timer for 7SEG LED
 		setTimer(3, 500);			// Set timer for blinking LED
 		clearTimer(0);				// Clear timer display LED in MODE1
 		clearTimer(1);				// Clear timer update buffer
@@ -235,7 +235,7 @@ void fsm_traffic_light(){
 		if (timer_flag[2] == 1){
 			updateLedBufferMode3();
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 		if (timer_flag[3] == 1){
 			HAL_GPIO_TogglePin(A1_GPIO_Port, A1_Pin);
@@ -278,7 +278,7 @@ void fsm_traffic_light(){
 		updateLedBufferMode4();
 		update7SEG(index_led);
 
-		setTimer(2, 250);			// Set timer for 7SEG LED
+		setTimer(2, 200);			// Set timer for 7SEG LED
 		setTimer(3, 500);			// Set timer for blinking LED
 		clearTimer(0);				// Clear timer display LED in MODE1
 		clearTimer(1);				// Clear timer update buffer
@@ -289,7 +289,7 @@ void fsm_traffic_light(){
 		if (timer_flag[2] == 1){
 			updateLedBufferMode4();
 			update7SEG(index_led);
-			setTimer(2, 250);
+			setTimer(2, 200);
 		}
 		if (timer_flag[3] == 1){
 			HAL_GPIO_TogglePin(G1_GPIO_Port, G1_Pin);
