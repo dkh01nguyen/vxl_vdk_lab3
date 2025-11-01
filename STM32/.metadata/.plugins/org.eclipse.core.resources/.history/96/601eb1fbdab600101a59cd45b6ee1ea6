@@ -1,0 +1,23 @@
+#include "global.h"
+
+int STATUS = INIT;
+
+int RED = 5;
+int AMBER = 2;
+int GREEN = 3;
+
+int t = 0;
+
+int a[3] = {RED, AMBER, GREEN};
+
+void update() {
+	if (a[0] == a[1] + a[2]) {
+		RED = a[0];
+		GREEN = a[2];
+		AMBER = a[1];
+	} else {
+		RED = 5;
+		AMBER = 2;
+		GREEN = 3;
+	}
+}

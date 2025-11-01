@@ -189,6 +189,7 @@ void fsm_traffic_light(){
 			setTimer(3, 500);
 		}
 		if (isButtonPressed(0) == 1){
+			RED = 5;
 			status = MODE3;
 		}
 
@@ -243,6 +244,7 @@ void fsm_traffic_light(){
 		}
 		if (isButtonPressed(0) == 1){
 			status = MODE4;
+			AMBER = 2;
 		}
 
 		if (isButtonPressed(1) == 1){
@@ -295,8 +297,8 @@ void fsm_traffic_light(){
 			setTimer(3, 500);
 		}
 		if (isButtonPressed(0) == 1){
-			update();
 			status = MODE1;
+			GREEN = 3;
 		}
 
 		if (isButtonPressed(1) == 1){

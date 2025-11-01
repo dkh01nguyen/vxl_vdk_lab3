@@ -3591,3 +3591,197 @@ arm-none-eabi-size   lab3.elf
   13536	    104	   1728	  15368	   3c08	lab3.elf
 Finished building: default.size.stdout
  
+11:26:29 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+../Core/Src/global.c:11:13: error: initializer element is not constant
+   11 | int a[3] = {RED, AMBER, GREEN};
+      |             ^~~
+../Core/Src/global.c:11:13: note: (near initialization for 'a[0]')
+../Core/Src/global.c:11:18: error: initializer element is not constant
+   11 | int a[3] = {RED, AMBER, GREEN};
+      |                  ^~~~~
+../Core/Src/global.c:11:18: note: (near initialization for 'a[1]')
+../Core/Src/global.c:11:25: error: initializer element is not constant
+   11 | int a[3] = {RED, AMBER, GREEN};
+      |                         ^~~~~
+../Core/Src/global.c:11:25: note: (near initialization for 'a[2]')
+make: *** [Core/Src/subdir.mk:49: Core/Src/global.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:208:4: error: 'a' undeclared (first use in this function)
+  208 |    a[0] = t;
+      |    ^
+../Core/Src/fsm_traffic_light.c:208:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:332:3: warning: implicit declaration of function 'clearLED' [-Wimplicit-function-declaration]
+  332 |   clearLED();
+      |   ^~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/fsm_traffic_light.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:26:49 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:208:4: error: 'a' undeclared (first use in this function)
+  208 |    a[0] = t;
+      |    ^
+../Core/Src/fsm_traffic_light.c:208:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:332:3: warning: implicit declaration of function 'clearLED' [-Wimplicit-function-declaration]
+  332 |   clearLED();
+      |   ^~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/fsm_traffic_light.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:27:19 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7SEG.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7SEG.d" -MT"Core/Src/display7SEG.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7SEG.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:332:3: warning: implicit declaration of function 'clearLED' [-Wimplicit-function-declaration]
+  332 |   clearLED();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13592	    104	   1736	  15432	   3c48	lab3.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+11:27:22 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13592	    104	   1736	  15432	   3c48	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+11:55:19 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13592	    104	   1736	  15432	   3c48	lab3.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab3.bin
+Finished building: lab3.hex
+ 
+ 
+Finished building: lab3.list
+ 
+11:56:31 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/display7SEG.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display7SEG.d" -MT"Core/Src/display7SEG.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/display7SEG.o"
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:208:4: error: 'a' undeclared (first use in this function)
+  208 |    a[0] = t;
+      |    ^
+../Core/Src/fsm_traffic_light.c:208:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/fsm_traffic_light.c:332:3: warning: implicit declaration of function 'clearLED' [-Wimplicit-function-declaration]
+  332 |   clearLED();
+      |   ^~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/fsm_traffic_light.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:58:27 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/fsm_traffic_light.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm_traffic_light.d" -MT"Core/Src/fsm_traffic_light.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/fsm_traffic_light.o"
+../Core/Src/fsm_traffic_light.c: In function 'fsm_traffic_light':
+../Core/Src/fsm_traffic_light.c:331:3: warning: implicit declaration of function 'clearLED' [-Wimplicit-function-declaration]
+  331 |   clearLED();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13552	    104	   1728	  15384	   3c18	lab3.elf
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
+11:58:30 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'MX_TIM2_Init':
+../Core/Src/main.c:175:36: error: 'TIMint' undeclared (first use in this function)
+  175 |   sClockSourceConfig.ClockSource = TIMint RED = 5;
+      |                                    ^~~~~~
+../Core/Src/main.c:175:36: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:175:42: error: expected ';' before 'RED'
+  175 |   sClockSourceConfig.ClockSource = TIMint RED = 5;
+      |                                          ^~~~
+      |                                          ;
+../Core/Src/main.c:177:17: error: '_CLOCKSOURCE_INTERNAL' undeclared (first use in this function); did you mean 'TIM_CLOCKSOURCE_INTERNAL'?
+  177 |   int GREEN = 3;_CLOCKSOURCE_INTERNAL;
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+      |                 TIM_CLOCKSOURCE_INTERNAL
+../Core/Src/main.c:177:7: warning: unused variable 'GREEN' [-Wunused-variable]
+  177 |   int GREEN = 3;_CLOCKSOURCE_INTERNAL;
+      |       ^~~~~
+../Core/Src/main.c:176:7: warning: unused variable 'AMBER' [-Wunused-variable]
+  176 |   int AMBER = 2;
+      |       ^~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+11:58:39 **** Incremental Build of configuration Debug for project lab3 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL_VDK_Lab\Lab 3\STM32\lab3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lab3.elf
+ 
+arm-none-eabi-size   lab3.elf 
+arm-none-eabi-objdump -h -S  lab3.elf  > "lab3.list"
+arm-none-eabi-objcopy  -O ihex  lab3.elf  "lab3.hex"
+arm-none-eabi-objcopy  -O binary  lab3.elf  "lab3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13552	    104	   1728	  15384	   3c18	lab3.elf
+Finished building: default.size.stdout
+ 
+Finished building: lab3.hex
+Finished building: lab3.bin
+ 
+ 
+Finished building: lab3.list
+ 
