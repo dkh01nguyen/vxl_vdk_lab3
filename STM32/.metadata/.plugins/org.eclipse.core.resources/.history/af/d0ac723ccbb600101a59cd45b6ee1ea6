@@ -6,7 +6,6 @@
 #define MODE2				2
 #define MODE3				3
 #define MODE4				4
-#define MODE5				5
 
 #define RED_GREEN			11
 #define RED_AMBER			12
@@ -16,7 +15,6 @@
 #define AUTO_RED			21
 #define AUTO_AMBER			31
 #define AUTO_GREEN			41
-#define FLASH_AMBER			51
 
 extern int status;
 

@@ -90,7 +90,7 @@ void fsm_traffic_light(){
 			status = MODE2;
 		}
 
-		if (isButtonPressed(2) == 1){
+		if (isButtonPressed(3) == 1){
 			status = MODE5;
 		}
 		break;
@@ -121,7 +121,7 @@ void fsm_traffic_light(){
 			status = MODE2;
 		}
 
-		if (isButtonPressed(2) == 1){
+		if (isButtonPressed(3) == 1){
 			status = MODE5;
 		}
 		break;
@@ -150,7 +150,7 @@ void fsm_traffic_light(){
 			status = MODE2;
 		}
 
-		if (isButtonPressed(2) == 1){
+		if (isButtonPressed(3) == 1){
 			status = MODE5;
 		}
 		break;
@@ -190,6 +190,10 @@ void fsm_traffic_light(){
 		}
 		if (isButtonPressed(0) == 1){
 			status = MODE3;
+		}
+
+		if (isButtonPressed(3) == 1){
+			status = MODE5;
 		}
 
 		if (isButtonPressed(1) == 1){
@@ -244,7 +248,9 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE4;
 		}
-
+		if (isButtonPressed(3) == 1){
+			status = MODE5;
+		}
 		if (isButtonPressed(1) == 1){
 			if (t > 99) {
 				t = 0;
@@ -299,6 +305,9 @@ void fsm_traffic_light(){
 			status = MODE1;
 		}
 
+		if (isButtonPressed(3) == 1){
+			status = MODE5;
+		}
 		if (isButtonPressed(1) == 1){
 			if (t > 99) {
 				t = 0;
@@ -332,7 +341,7 @@ void fsm_traffic_light(){
 			HAL_GPIO_TogglePin(A2_GPIO_Port, A2_Pin);
 			setTimer(3, 500);
 		}
-		if (isButtonPressed(0) == 1 || isButtonPressed(2) == 1){
+		if (isButtonPressed(0) == 1 || isButtonPressed(3) == 1){
 			status = MODE1;
 		}
 		break;

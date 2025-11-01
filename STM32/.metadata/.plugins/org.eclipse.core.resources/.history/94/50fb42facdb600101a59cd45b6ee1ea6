@@ -60,10 +60,6 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
 		}
-
-		if (isButtonPressed(2) == 1){
-			status = MODE5;
-		}
 		break;
 
 	case RED_AMBER:
@@ -89,10 +85,6 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
 		}
-
-		if (isButtonPressed(2) == 1){
-			status = MODE5;
-		}
 		break;
 
 	case GREEN_RED:
@@ -116,13 +108,9 @@ void fsm_traffic_light(){
 			update7SEG(index_led);
 			setTimer(2, 200);
 		}
-
+		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
-		}
-
-		if (isButtonPressed(2) == 1){
-			status = MODE5;
 		}
 		break;
 
@@ -148,10 +136,6 @@ void fsm_traffic_light(){
 		// If button 1 is pressed, come to MODE2
 		if (isButtonPressed(0) == 1){
 			status = MODE2;
-		}
-
-		if (isButtonPressed(2) == 1){
-			status = MODE5;
 		}
 		break;
 
@@ -244,7 +228,6 @@ void fsm_traffic_light(){
 		if (isButtonPressed(0) == 1){
 			status = MODE4;
 		}
-
 		if (isButtonPressed(1) == 1){
 			if (t > 99) {
 				t = 0;
@@ -299,6 +282,9 @@ void fsm_traffic_light(){
 			status = MODE1;
 		}
 
+		if (isButtonPressed(3) == 1){
+			status = MODE5;
+		}
 		if (isButtonPressed(1) == 1){
 			if (t > 99) {
 				t = 0;
@@ -325,14 +311,14 @@ void fsm_traffic_light(){
 
 		setTimer(3, 500);
 		status = FLASH_AMBER;
-	case FLASH_AMBER:
 		clearLED();
+	case FLASH_AMBER:
 		if (timer_flag[3] == 1){
 			HAL_GPIO_TogglePin(A1_GPIO_Port, A1_Pin);
 			HAL_GPIO_TogglePin(A2_GPIO_Port, A2_Pin);
 			setTimer(3, 500);
 		}
-		if (isButtonPressed(0) == 1 || isButtonPressed(2) == 1){
+		if (isButtonPressed(0) == 1){
 			status = MODE1;
 		}
 		break;
